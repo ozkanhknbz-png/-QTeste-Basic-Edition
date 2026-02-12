@@ -340,6 +340,11 @@ async def root():
 async def health():
     return {"status": "healthy"}
 
+# Privacy Policy endpoint
+@api_router.get("/privacy-policy", response_class=HTMLResponse)
+async def privacy_policy():
+    return PRIVACY_POLICY_HTML
+
 # Question endpoints
 @api_router.get("/questions")
 async def get_questions(
