@@ -73,6 +73,242 @@ class AIQuestionRequest(BaseModel):
     difficulty: str
     category: Optional[str] = None
 
+# Privacy Policy HTML
+PRIVACY_POLICY_HTML = """
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ Game - Gizlilik Politikası / Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+        }
+        h1 { 
+            color: #4ECDC4; 
+            text-align: center; 
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #a0a0a0;
+            margin-bottom: 30px;
+        }
+        h2 { 
+            color: #FFD93D; 
+            margin-top: 30px; 
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        h3 {
+            color: #4ECDC4;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p, li { 
+            color: #e0e0e0; 
+            margin-bottom: 10px; 
+        }
+        ul { 
+            padding-left: 25px; 
+            margin-bottom: 15px;
+        }
+        li { margin-bottom: 8px; }
+        .highlight {
+            background: rgba(78, 205, 196, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #4ECDC4;
+            margin: 20px 0;
+        }
+        .contact {
+            background: rgba(255, 217, 61, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .date {
+            text-align: center;
+            color: #666;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .lang-switch {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .lang-switch a {
+            color: #4ECDC4;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 15px;
+            border: 1px solid #4ECDC4;
+            border-radius: 20px;
+        }
+        .lang-switch a:hover {
+            background: #4ECDC4;
+            color: #1a1a2e;
+        }
+        .section { margin-bottom: 25px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 IQ Game</h1>
+        <p class="subtitle">Gizlilik Politikası / Privacy Policy</p>
+        
+        <div class="lang-switch">
+            <a href="#turkish">🇹🇷 Türkçe</a>
+            <a href="#english">🇬🇧 English</a>
+        </div>
+
+        <!-- TURKISH VERSION -->
+        <section id="turkish">
+            <h2>🇹🇷 Gizlilik Politikası</h2>
+            
+            <div class="section">
+                <h3>1. Giriş</h3>
+                <p>IQ Game uygulamasını kullandığınız için teşekkür ederiz. Bu gizlilik politikası, uygulamamızı kullanırken kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
+            </div>
+
+            <div class="section">
+                <h3>2. Toplanan Bilgiler</h3>
+                <p>Uygulamamız aşağıdaki bilgileri toplayabilir:</p>
+                <ul>
+                    <li><strong>Kullanıcı Adı:</strong> Oyun sırasında girdiğiniz takma ad</li>
+                    <li><strong>Oyun Skorları:</strong> Oyun performansınız ve sonuçlarınız</li>
+                    <li><strong>Dil Tercihi:</strong> Seçtiğiniz uygulama dili</li>
+                    <li><strong>Cihaz Bilgileri:</strong> Cihaz türü ve işletim sistemi (anonim)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>3. Bilgilerin Kullanımı</h3>
+                <p>Topladığımız bilgiler şu amaçlarla kullanılır:</p>
+                <ul>
+                    <li>Oyun deneyiminizi kişiselleştirmek</li>
+                    <li>Liderlik tablosunu oluşturmak</li>
+                    <li>Günlük zorlukları sunmak</li>
+                    <li>Uygulama performansını iyileştirmek</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <h3>4. Reklam Hizmetleri</h3>
+                <p>Uygulamamız Google AdMob reklam hizmetini kullanmaktadır. AdMob, size daha alakalı reklamlar göstermek için cihaz tanımlayıcıları ve kullanım verileri toplayabilir. Daha fazla bilgi için <a href="https://policies.google.com/privacy" style="color: #FFD93D;">Google Gizlilik Politikası</a>'nı inceleyebilirsiniz.</p>
+            </div>
+
+            <div class="section">
+                <h3>5. Veri Güvenliği</h3>
+                <p>Verilerinizin güvenliği bizim için önemlidir. Bilgilerinizi korumak için endüstri standardı güvenlik önlemleri kullanıyoruz. Ancak, internet üzerinden hiçbir veri aktarımının %100 güvenli olmadığını unutmayın.</p>
+            </div>
+
+            <div class="section">
+                <h3>6. Çocukların Gizliliği</h3>
+                <p>Uygulamamız tüm yaş gruplarına uygundur. 13 yaşından küçük çocuklardan bilerek kişisel bilgi toplamıyoruz. Ebeveynler veya veliler, çocuklarının kişisel bilgi sağladığını düşünüyorlarsa bizimle iletişime geçebilirler.</p>
+            </div>
+
+            <div class="section">
+                <h3>7. Haklarınız</h3>
+                <p>Aşağıdaki haklara sahipsiniz:</p>
+                <ul>
+                    <li>Verilerinize erişim talep etme</li>
+                    <li>Verilerinizin düzeltilmesini isteme</li>
+                    <li>Verilerinizin silinmesini talep etme</li>
+                    <li>Veri işlemeye itiraz etme</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ENGLISH VERSION -->
+        <section id="english" style="margin-top: 50px; padding-top: 30px; border-top: 2px solid rgba(255,255,255,0.1);">
+            <h2>🇬🇧 Privacy Policy</h2>
+            
+            <div class="section">
+                <h3>1. Introduction</h3>
+                <p>Thank you for using IQ Game. This privacy policy explains how your personal data is collected, used, and protected when you use our application.</p>
+            </div>
+
+            <div class="section">
+                <h3>2. Information We Collect</h3>
+                <p>Our application may collect the following information:</p>
+                <ul>
+                    <li><strong>Username:</strong> The nickname you enter during the game</li>
+                    <li><strong>Game Scores:</strong> Your game performance and results</li>
+                    <li><strong>Language Preference:</strong> Your selected app language</li>
+                    <li><strong>Device Information:</strong> Device type and operating system (anonymous)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>3. How We Use Information</h3>
+                <p>The information we collect is used to:</p>
+                <ul>
+                    <li>Personalize your gaming experience</li>
+                    <li>Create the leaderboard</li>
+                    <li>Provide daily challenges</li>
+                    <li>Improve application performance</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <h3>4. Advertising Services</h3>
+                <p>Our application uses Google AdMob advertising service. AdMob may collect device identifiers and usage data to show you more relevant ads. For more information, please review <a href="https://policies.google.com/privacy" style="color: #FFD93D;">Google's Privacy Policy</a>.</p>
+            </div>
+
+            <div class="section">
+                <h3>5. Data Security</h3>
+                <p>The security of your data is important to us. We use industry-standard security measures to protect your information. However, please note that no data transmission over the internet is 100% secure.</p>
+            </div>
+
+            <div class="section">
+                <h3>6. Children's Privacy</h3>
+                <p>Our application is suitable for all age groups. We do not knowingly collect personal information from children under 13. Parents or guardians who believe their child has provided personal information can contact us.</p>
+            </div>
+
+            <div class="section">
+                <h3>7. Your Rights</h3>
+                <p>You have the following rights:</p>
+                <ul>
+                    <li>Request access to your data</li>
+                    <li>Request correction of your data</li>
+                    <li>Request deletion of your data</li>
+                    <li>Object to data processing</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="contact">
+            <h3>📧 İletişim / Contact</h3>
+            <p>Sorularınız için / For questions:</p>
+            <p><strong>iqgame.app@gmail.com</strong></p>
+        </div>
+
+        <p class="date">Son Güncelleme / Last Updated: Şubat 2025 / February 2025</p>
+    </div>
+</body>
+</html>
+"""
+
 # Helper function to calculate IQ
 def calculate_iq(correct: int, total: int, difficulty: str, time_bonus: int = 0) -> int:
     if total == 0:
