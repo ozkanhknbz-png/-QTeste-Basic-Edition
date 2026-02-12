@@ -169,7 +169,12 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     alignItems: 'center',
-    paddingVertical: 30,
+    paddingVertical: 20,
+  },
+  logo: {
+    width: 180,
+    height: 140,
+    marginBottom: 10,
   },
   title: {
     fontSize: 36,
