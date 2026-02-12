@@ -66,8 +66,11 @@ export default function HomeScreen() {
 
       {/* Title */}
       <View style={styles.titleContainer}>
-        <Ionicons name="bulb" size={60} color="#FFD93D" />
-        <Text style={styles.title}>{t.appTitle}</Text>
+        <Image 
+          source={require('../assets/images/icon-original.png')} 
+          style={styles.logo}
+          resizeMode="contain"
+        />
         <Text style={styles.subtitle}>Challenge Your Mind</Text>
       </View>
 
